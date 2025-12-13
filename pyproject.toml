@@ -1,0 +1,11 @@
+[project]
+name = "cv-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mani-skill @ git+https://github.com/haosulab/ManiSkill.git",
+    "tensorboard>=2.20.0",
+    "wandb>=0.23.1",
+]

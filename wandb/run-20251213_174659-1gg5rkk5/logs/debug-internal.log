@@ -1,0 +1,13 @@
+{"time":"2025-12-13T17:46:59.373153892-05:00","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-13T17:46:59.56198775-05:00","level":"INFO","msg":"stream: created new stream","id":"1gg5rkk5"}
+{"time":"2025-12-13T17:46:59.56203452-05:00","level":"INFO","msg":"handler: started","stream_id":"1gg5rkk5"}
+{"time":"2025-12-13T17:46:59.562126429-05:00","level":"INFO","msg":"stream: started","id":"1gg5rkk5"}
+{"time":"2025-12-13T17:46:59.562143155-05:00","level":"INFO","msg":"writer: started","stream_id":"1gg5rkk5"}
+{"time":"2025-12-13T17:46:59.562150325-05:00","level":"INFO","msg":"sender: started","stream_id":"1gg5rkk5"}
+{"time":"2025-12-13T17:46:59.795797675-05:00","level":"ERROR","msg":"error generating diff","error":"exit status 128"}
+{"time":"2025-12-13T17:46:59.79721017-05:00","level":"ERROR","msg":"error getting latest commit","error":"exit status 128"}
+{"time":"2025-12-13T18:10:13.192240592-05:00","level":"INFO","msg":"stream: closing","id":"1gg5rkk5"}
+{"time":"2025-12-13T18:10:13.54475404-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-13T18:10:13.687365692-05:00","level":"INFO","msg":"handler: closed","stream_id":"1gg5rkk5"}
+{"time":"2025-12-13T18:10:13.687417831-05:00","level":"INFO","msg":"sender: closed","stream_id":"1gg5rkk5"}
+{"time":"2025-12-13T18:10:13.687424561-05:00","level":"INFO","msg":"stream: closed","id":"1gg5rkk5"}

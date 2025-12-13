@@ -1,0 +1,20 @@
+####
+args.num_iterations=390 args.num_envs=512 args.num_eval_envs=8
+args.minibatch_size=800 args.batch_size=25600 args.update_epochs=4
+####
+Traceback (most recent call last):
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 385, in <module>
+    agent = Agent(envs, sample_obs=next_obs).to(device)
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 244, in __init__
+    self.feature_net = NatureCNN(sample_obs=sample_obs)
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 190, in __init__
+    in_channels=sample_obs["rgb"].shape[-1]
+KeyError: 'rgb'
+Traceback (most recent call last):
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 385, in <module>
+    agent = Agent(envs, sample_obs=next_obs).to(device)
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 244, in __init__
+    self.feature_net = NatureCNN(sample_obs=sample_obs)
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 190, in __init__
+    in_channels=sample_obs["rgb"].shape[-1]
+KeyError: 'rgb'

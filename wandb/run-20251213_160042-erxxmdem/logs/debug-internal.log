@@ -1,0 +1,13 @@
+{"time":"2025-12-13T16:00:42.477942667-05:00","level":"INFO","msg":"stream: starting","core version":"0.23.1"}
+{"time":"2025-12-13T16:00:42.66837511-05:00","level":"INFO","msg":"stream: created new stream","id":"erxxmdem"}
+{"time":"2025-12-13T16:00:42.66842776-05:00","level":"INFO","msg":"handler: started","stream_id":"erxxmdem"}
+{"time":"2025-12-13T16:00:42.66850001-05:00","level":"INFO","msg":"stream: started","id":"erxxmdem"}
+{"time":"2025-12-13T16:00:42.668511237-05:00","level":"INFO","msg":"writer: started","stream_id":"erxxmdem"}
+{"time":"2025-12-13T16:00:42.668512869-05:00","level":"INFO","msg":"sender: started","stream_id":"erxxmdem"}
+{"time":"2025-12-13T16:00:42.975211986-05:00","level":"ERROR","msg":"error generating diff","error":"exit status 128"}
+{"time":"2025-12-13T16:00:42.976559588-05:00","level":"ERROR","msg":"error getting latest commit","error":"exit status 128"}
+{"time":"2025-12-13T16:22:36.111319-05:00","level":"INFO","msg":"stream: closing","id":"erxxmdem"}
+{"time":"2025-12-13T16:22:36.448172058-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-12-13T16:22:36.589666678-05:00","level":"INFO","msg":"handler: closed","stream_id":"erxxmdem"}
+{"time":"2025-12-13T16:22:36.589728342-05:00","level":"INFO","msg":"sender: closed","stream_id":"erxxmdem"}
+{"time":"2025-12-13T16:22:36.589743505-05:00","level":"INFO","msg":"stream: closed","id":"erxxmdem"}

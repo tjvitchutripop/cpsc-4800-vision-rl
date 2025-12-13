@@ -1,0 +1,23 @@
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_setup.py:_flush():80] Current SDK version is 0.23.1
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_setup.py:_flush():80] Configure stats pid to 89742
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_setup.py:_flush():80] Loading settings from /home/tj/.config/wandb/settings
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_setup.py:_flush():80] Loading settings from /data/tj/Documents/cv-project/wandb/settings
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_init.py:setup_run_log_directory():714] Logging user logs to /data/tj/Documents/cv-project/wandb/run-20251213_162759-9e0uq3np/logs/debug.log
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_init.py:setup_run_log_directory():715] Logging internal logs to /data/tj/Documents/cv-project/wandb/run-20251213_162759-9e0uq3np/logs/debug-internal.log
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_init.py:init():841] calling init triggers
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_init.py:init():846] wandb.init called with sweep_config: {}
+config: {'exp_name': 'train_ppo', 'seed': 1, 'torch_deterministic': True, 'cuda': True, 'track': True, 'wandb_project_name': 'vision-rl', 'wandb_entity': None, 'wandb_group': 'PPO', 'capture_video': True, 'save_model': True, 'evaluate': False, 'checkpoint': None, 'render_mode': 'all', 'env_id': 'PickCube-v1', 'include_state': True, 'total_timesteps': 10000000, 'learning_rate': 0.0003, 'num_envs': 512, 'num_eval_envs': 8, 'partial_reset': True, 'eval_partial_reset': False, 'num_steps': 50, 'num_eval_steps': 50, 'reconfiguration_freq': None, 'eval_reconfiguration_freq': 1, 'control_mode': 'pd_joint_delta_pos', 'anneal_lr': False, 'gamma': 0.8, 'gae_lambda': 0.9, 'num_minibatches': 32, 'update_epochs': 4, 'norm_adv': True, 'clip_coef': 0.2, 'clip_vloss': False, 'ent_coef': 0.0, 'vf_coef': 0.5, 'max_grad_norm': 0.5, 'target_kl': 0.2, 'reward_scale': 1.0, 'eval_freq': 25, 'save_train_video_freq': None, 'finite_horizon_gae': False, 'batch_size': 25600, 'minibatch_size': 800, 'num_iterations': 390, 'rgb': True, 'depth': True, 'env_cfg': {'obs_mode': 'rgb', 'render_mode': 'all', 'sim_backend': 'physx_cuda', 'control_mode': 'pd_joint_delta_pos', 'num_envs': 512, 'env_id': 'PickCube-v1', 'reward_mode': 'normalized_dense', 'env_horizon': 50, 'partial_reset': True}, 'eval_env_cfg': {'obs_mode': 'rgb', 'render_mode': 'all', 'sim_backend': 'physx_cuda', 'control_mode': 'pd_joint_delta_pos', 'num_envs': 8, 'env_id': 'PickCube-v1', 'reward_mode': 'normalized_dense', 'env_horizon': 50, 'partial_reset': True}, '_wandb': {'code_path': 'code/src/train_ppo.py'}}
+2025-12-13 16:27:59,051 INFO    MainThread:89742 [wandb_init.py:init():889] starting backend
+2025-12-13 16:27:59,276 INFO    MainThread:89742 [wandb_init.py:init():892] sending inform_init request
+2025-12-13 16:27:59,277 INFO    MainThread:89742 [wandb_init.py:init():900] backend started and connected
+2025-12-13 16:27:59,278 INFO    MainThread:89742 [wandb_init.py:init():970] updated telemetry
+2025-12-13 16:27:59,279 INFO    MainThread:89742 [wandb_init.py:init():994] communicating run to backend with 90.0 second timeout
+2025-12-13 16:27:59,685 INFO    MainThread:89742 [wandb_init.py:init():1041] starting run threads in backend
+2025-12-13 16:27:59,734 INFO    MainThread:89742 [wandb_run.py:_console_start():2521] atexit reg
+2025-12-13 16:27:59,734 INFO    MainThread:89742 [wandb_run.py:_redirect():2369] redirect: wrap_raw
+2025-12-13 16:27:59,734 INFO    MainThread:89742 [wandb_run.py:_redirect():2438] Wrapping output streams.
+2025-12-13 16:27:59,734 INFO    MainThread:89742 [wandb_run.py:_redirect():2461] Redirects installed.
+2025-12-13 16:27:59,736 INFO    MainThread:89742 [wandb_init.py:init():1081] run started, returning control to user process
+2025-12-13 16:56:47,267 INFO    wandb-AsyncioManager-main:89742 [service_client.py:_forward_responses():80] Reached EOF.
+2025-12-13 16:56:47,267 INFO    wandb-AsyncioManager-main:89742 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

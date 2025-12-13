@@ -1,0 +1,295 @@
+####
+args.num_iterations=390 args.num_envs=512 args.num_eval_envs=8
+args.minibatch_size=800 args.batch_size=25600 args.update_epochs=4
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=2.8365254402160645
+eval_episode_len_mean=50.0
+eval_reward_mean=0.05673050135374069
+eval_success_at_end_mean=0.0
+model saved to runs/PickCube-v1__train_ppo__1__1765666120/ckpt_1.pt
+SPS: 3352
+Epoch: 2, global_step=25600
+SPS: 4422
+Epoch: 3, global_step=51200
+SPS: 4928
+Epoch: 4, global_step=76800
+SPS: 5218
+Epoch: 5, global_step=102400
+SPS: 5397
+Epoch: 6, global_step=128000
+SPS: 5518
+Epoch: 7, global_step=153600
+SPS: 5607
+Epoch: 8, global_step=179200
+SPS: 5672
+Epoch: 9, global_step=204800
+SPS: 5722
+Epoch: 10, global_step=230400
+SPS: 5760
+Epoch: 11, global_step=256000
+SPS: 5792
+Epoch: 12, global_step=281600
+SPS: 5810
+Epoch: 13, global_step=307200
+SPS: 5833
+Epoch: 14, global_step=332800
+SPS: 5850
+Epoch: 15, global_step=358400
+SPS: 5861
+Epoch: 16, global_step=384000
+SPS: 5871
+Epoch: 17, global_step=409600
+SPS: 5880
+Epoch: 18, global_step=435200
+SPS: 5888
+Epoch: 19, global_step=460800
+SPS: 5896
+Epoch: 20, global_step=486400
+SPS: 5902
+Epoch: 21, global_step=512000
+SPS: 5904
+Epoch: 22, global_step=537600
+SPS: 5905
+Epoch: 23, global_step=563200
+SPS: 5906
+Epoch: 24, global_step=588800
+SPS: 5906
+Epoch: 25, global_step=614400
+SPS: 5905
+Epoch: 26, global_step=640000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=18.578893661499023
+eval_episode_len_mean=50.0
+eval_reward_mean=0.3715778589248657
+eval_success_at_end_mean=0.0
+model saved to runs/PickCube-v1__train_ppo__1__1765666120/ckpt_26.pt
+SPS: 5754
+Epoch: 27, global_step=665600
+SPS: 5759
+Epoch: 28, global_step=691200
+SPS: 5764
+Epoch: 29, global_step=716800
+SPS: 5768
+Epoch: 30, global_step=742400
+SPS: 5772
+Epoch: 31, global_step=768000
+SPS: 5776
+Epoch: 32, global_step=793600
+SPS: 5777
+Epoch: 33, global_step=819200
+SPS: 5780
+Epoch: 34, global_step=844800
+SPS: 5784
+Epoch: 35, global_step=870400
+SPS: 5787
+Epoch: 36, global_step=896000
+SPS: 5790
+Epoch: 37, global_step=921600
+SPS: 5793
+Epoch: 38, global_step=947200
+SPS: 5796
+Epoch: 39, global_step=972800
+SPS: 5798
+Epoch: 40, global_step=998400
+SPS: 5800
+Epoch: 41, global_step=1024000
+SPS: 5802
+Epoch: 42, global_step=1049600
+SPS: 5803
+Epoch: 43, global_step=1075200
+SPS: 5805
+Epoch: 44, global_step=1100800
+SPS: 5806
+Epoch: 45, global_step=1126400
+SPS: 5806
+Epoch: 46, global_step=1152000
+SPS: 5806
+Epoch: 47, global_step=1177600
+SPS: 5807
+Epoch: 48, global_step=1203200
+SPS: 5807
+Epoch: 49, global_step=1228800
+SPS: 5807
+Epoch: 50, global_step=1254400
+SPS: 5808
+Epoch: 51, global_step=1280000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=19.80728530883789
+eval_episode_len_mean=50.0
+eval_reward_mean=0.39614570140838623
+eval_success_at_end_mean=0.0
+model saved to runs/PickCube-v1__train_ppo__1__1765666120/ckpt_51.pt
+SPS: 5733
+Epoch: 52, global_step=1305600
+SPS: 5733
+Epoch: 53, global_step=1331200
+SPS: 5733
+Epoch: 54, global_step=1356800
+SPS: 5733
+Epoch: 55, global_step=1382400
+SPS: 5732
+Epoch: 56, global_step=1408000
+SPS: 5731
+Epoch: 57, global_step=1433600
+SPS: 5731
+Epoch: 58, global_step=1459200
+SPS: 5730
+Epoch: 59, global_step=1484800
+SPS: 5729
+Epoch: 60, global_step=1510400
+SPS: 5727
+Epoch: 61, global_step=1536000
+SPS: 5725
+Epoch: 62, global_step=1561600
+SPS: 5723
+Epoch: 63, global_step=1587200
+SPS: 5720
+Epoch: 64, global_step=1612800
+SPS: 5717
+Epoch: 65, global_step=1638400
+SPS: 5714
+Epoch: 66, global_step=1664000
+SPS: 5711
+Epoch: 67, global_step=1689600
+SPS: 5708
+Epoch: 68, global_step=1715200
+SPS: 5704
+Epoch: 69, global_step=1740800
+SPS: 5700
+Epoch: 70, global_step=1766400
+SPS: 5696
+Epoch: 71, global_step=1792000
+SPS: 5690
+Epoch: 72, global_step=1817600
+SPS: 5704
+Epoch: 73, global_step=1843200
+SPS: 5713
+Epoch: 74, global_step=1868800
+SPS: 5707
+Epoch: 75, global_step=1894400
+SPS: 5700
+Epoch: 76, global_step=1920000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.0
+eval_return_mean=20.715726852416992
+eval_episode_len_mean=50.0
+eval_reward_mean=0.41431450843811035
+eval_success_at_end_mean=0.0
+model saved to runs/PickCube-v1__train_ppo__1__1765666120/ckpt_76.pt
+SPS: 5646
+Epoch: 77, global_step=1945600
+SPS: 5641
+Epoch: 78, global_step=1971200
+SPS: 5650
+Epoch: 79, global_step=1996800
+SPS: 5643
+Epoch: 80, global_step=2022400
+SPS: 5636
+Epoch: 81, global_step=2048000
+SPS: 5630
+Epoch: 82, global_step=2073600
+SPS: 5622
+Epoch: 83, global_step=2099200
+SPS: 5615
+Epoch: 84, global_step=2124800
+SPS: 5607
+Epoch: 85, global_step=2150400
+SPS: 5599
+Epoch: 86, global_step=2176000
+SPS: 5600
+Epoch: 87, global_step=2201600
+SPS: 5601
+Epoch: 88, global_step=2227200
+SPS: 5599
+Epoch: 89, global_step=2252800
+SPS: 5590
+Epoch: 90, global_step=2278400
+SPS: 5602
+Epoch: 91, global_step=2304000
+SPS: 5606
+Epoch: 92, global_step=2329600
+SPS: 5596
+Epoch: 93, global_step=2355200
+SPS: 5587
+Epoch: 94, global_step=2380800
+SPS: 5577
+Epoch: 95, global_step=2406400
+SPS: 5566
+Epoch: 96, global_step=2432000
+SPS: 5556
+Epoch: 97, global_step=2457600
+SPS: 5547
+Epoch: 98, global_step=2483200
+SPS: 5537
+Epoch: 99, global_step=2508800
+SPS: 5529
+Epoch: 100, global_step=2534400
+SPS: 5531
+Epoch: 101, global_step=2560000
+Evaluating
+Evaluated 400 steps resulting in 8 episodes
+eval_success_once_mean=0.625
+eval_return_mean=26.953147888183594
+eval_episode_len_mean=50.0
+eval_reward_mean=0.5390629768371582
+eval_success_at_end_mean=0.25
+model saved to runs/PickCube-v1__train_ppo__1__1765666120/ckpt_101.pt
+SPS: 5489
+Epoch: 102, global_step=2585600
+SPS: 5481
+Epoch: 103, global_step=2611200
+SPS: 5481
+Epoch: 104, global_step=2636800
+SPS: 5472
+Epoch: 105, global_step=2662400
+SPS: 5464
+Epoch: 106, global_step=2688000
+SPS: 5455
+Epoch: 107, global_step=2713600
+SPS: 5446
+Epoch: 108, global_step=2739200
+SPS: 5437
+Epoch: 109, global_step=2764800
+SPS: 5442
+Epoch: 110, global_step=2790400
+SPS: 5440
+Epoch: 111, global_step=2816000
+SPS: 5443
+Epoch: 112, global_step=2841600
+SPS: 5445
+Epoch: 113, global_step=2867200
+SPS: 5441
+Epoch: 114, global_step=2892800
+SPS: 5441
+Epoch: 115, global_step=2918400
+SPS: 5433
+Epoch: 116, global_step=2944000
+SPS: 5435
+Epoch: 117, global_step=2969600
+SPS: 5440
+Epoch: 118, global_step=2995200
+Traceback (most recent call last):
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 561, in <module>
+    _, newlogprob, entropy, newvalue = agent.get_action_and_value(b_obs[mb_inds], b_actions[mb_inds])
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 160, in __getitem__
+    return {
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 160, in <dictcomp>
+    return {
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 561, in <module>
+    _, newlogprob, entropy, newvalue = agent.get_action_and_value(b_obs[mb_inds], b_actions[mb_inds])
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 160, in __getitem__
+    return {
+  File "/data/tj/Documents/cv-project/src/train_ppo.py", line 160, in <dictcomp>
+    return {
+KeyboardInterrupt
