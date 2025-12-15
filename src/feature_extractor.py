@@ -3,7 +3,7 @@ import torch.nn as nn
 import transformers
 from transformers import AutoModel
 from torchvision import models
-from torchvision.models import ResNet50_Weights, DenseNet121_Weights
+from torchvision.models import ResNet50_Weights, DenseNet121_Weights, EfficientNet_B0_Weights
 
 class NatureCNN(nn.Module):
     def __init__(self, sample_obs):
@@ -251,6 +251,78 @@ class ResNet50(nn.Module):
         else:
             raise ValueError("ResNet50 feature extractor requires 'rgb' observations")
 
+class EfficientNetB0(nn.Module):
+    def __init__(self, sample_obs=None, freeze_backbone=True):
+        super().__init__()
+        
+        # Load pretrained EfficientNet-B0 with ImageNet weights
+        weights = EfficientNet_B0_Weights.IMAGENET1K_V1
+        efficientnet = models.efficientnet_b0(weights=weights)
+        print(f"Loaded EfficientNet-B0 with {weights} pretrained weights")
+        
+        # EfficientNet has features + classifier structure
+        # Remove the final classification layer
+        # EfficientNet-B0 outputs 1280 features from the final layer
+        self.backbone = efficientnet.features
+        self.pooling = nn.AdaptiveAvgPool2d((1, 1))
+        
+        # Freeze backbone weights if specified
+        if freeze_backbone:
+            for param in self.backbone.parameters():
+                param.requires_grad = False
+        
+        # Expected input size for EfficientNet-B0 (224x224)
+        self.expected_size = 224
+        
+        # ImageNet normalization (required for pretrained models)
+        self.register_buffer('mean', torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1))
+        self.register_buffer('std', torch.tensor([0.229, 0.224, 0.225]).view(1, 3, 1, 1))
+        
+        # EfficientNet-B0 outputs 1280 features, project to 256 to match other extractors
+        self.projection = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(1280, 512),
+            nn.ReLU(),
+            nn.Linear(512, 256)
+        )
+        
+        self.out_features = 256
+    
+    def forward(self, observations) -> torch.Tensor:
+        # Extract RGB images from observations
+        if "rgb" in observations:
+            # observations["rgb"] shape: (batch, height, width, channels)
+            rgb = observations["rgb"].float() / 255.0  # Normalize to [0, 1]
+            
+            # Permute to (batch, channels, height, width)
+            rgb = rgb.permute(0, 3, 1, 2)
+            
+            # Resize if necessary (EfficientNet-B0 expects 224x224)
+            if rgb.shape[-2:] != (self.expected_size, self.expected_size):
+                rgb = torch.nn.functional.interpolate(
+                    rgb, 
+                    size=(self.expected_size, self.expected_size), 
+                    mode='bilinear', 
+                    align_corners=False
+                )
+            
+            # Apply ImageNet normalization (critical for pretrained models!)
+            rgb = (rgb - self.mean) / self.std
+            
+            # Extract features using EfficientNet-B0 backbone
+            with torch.no_grad() if not self.backbone.training else torch.enable_grad():
+                efficientnet_features = self.backbone(rgb)
+                # Output shape: (batch, 1280, H, W) where H,W depend on input size
+                efficientnet_features = self.pooling(efficientnet_features)
+                # Output shape: (batch, 1280, 1, 1)
+            
+            # Project to desired feature dimension
+            # The projection head is always trainable
+            features = self.projection(efficientnet_features)
+            
+            return features
+        else:
+            raise ValueError("EfficientNet-B0 feature extractor requires 'rgb' observations")
 
 class DenseNet121(nn.Module):
     def __init__(self, sample_obs=None, freeze_backbone=True):

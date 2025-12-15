@@ -1,2 +1,7 @@
-CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --segmentation --include_state
-CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --rgb 
+# CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --rgb --env_id=PushCube-v1 --seed=1788 --num_envs=256 --update_epochs=8 --num_minibatches=8 --total_timesteps=5_000_000 --num-steps=4 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --segmentation --env_id=PushCube-v1 --seed=1788 --num_envs=256 --update_epochs=8 --num_minibatches=8 --total_timesteps=5_000_000 --num-steps=4 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --rgb --segmentation --env_id=PushCube-v1 --seed=1788 --num_envs=256 --update_epochs=8 --num_minibatches=8 --total_timesteps=5_000_000 --num-steps=4 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --depth --env_id=PushCube-v1 --seed=1788 --num_envs=256 --update_epochs=8 --num_minibatches=8 --total_timesteps=5_000_000 --num-steps=4 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --rgb --depth --env_id=PushCube-v1 --seed=1788 --num_envs=256 --update_epochs=8 --num_minibatches=8 --total_timesteps=5_000_000 --num-steps=4 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --segmentation --depth --env_id=PushCube-v1 --seed=1788 --num_envs=256 --update_epochs=8 --num_minibatches=8 --total_timesteps=5_000_000 --num-steps=4 --num_eval_envs=16
+CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --rgb --segmentation --depth --env_id=PushCube-v1 --seed=1788 --num_envs=256 --update_epochs=8 --num_minibatches=8 --total_timesteps=5_000_000 --num-steps=4 --num_eval_envs=16

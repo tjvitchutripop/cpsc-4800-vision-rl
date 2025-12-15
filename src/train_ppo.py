@@ -22,7 +22,7 @@ from mani_skill.utils.wrappers.flatten import FlattenActionSpaceWrapper, Flatten
 from utils import FlattenRGBDSegObservationWrapper
 from mani_skill.utils.wrappers.record import RecordEpisode
 from mani_skill.vector.wrappers.gymnasium import ManiSkillVectorEnv
-from feature_extractor import NatureCNN, Theia, ResNet50, DenseNet121
+from feature_extractor import NatureCNN, Theia, ResNet50, DenseNet121, EfficientNetB0
 
 @dataclass
 class Args:
@@ -196,9 +196,10 @@ class Agent(nn.Module):
             self.feature_net = ResNet50(sample_obs=sample_obs)
         elif feature_extractor == "densenet121":
             self.feature_net = DenseNet121(sample_obs=sample_obs)
+        elif feature_extractor == "efficientnet_b0":
+            self.feature_net = EfficientNetB0(sample_obs=sample_obs)
         else:
             raise ValueError(f"Unknown feature extractor type: {feature_extractor}")
-        # latent_size = np.array(envs.unwrapped.single_observation_space.shape).prod()
         latent_size = self.feature_net.out_features
         self.critic = nn.Sequential(
             layer_init(nn.Linear(latent_size, 512)),

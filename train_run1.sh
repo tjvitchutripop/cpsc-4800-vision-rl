@@ -1,2 +1,7 @@
-CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --depth --include_state
-CUDA_VISIBLE_DEVICES=0 uv run src/train_ppo.py --rgb --depth --segmentation --include_state
+# CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --rgb --env_id=PushT-v1 --seed=1788 --num_envs=1024 --num-steps=16 --update_epochs=8 --num_minibatches=32 --total_timesteps=32_000_000 --num_eval_steps=100 --gamma=0.99 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --segmentation --env_id=PushT-v1 --seed=1788 --num_envs=1024 --num-steps=16 --update_epochs=8 --num_minibatches=32 --total_timesteps=32_000_000 --num_eval_steps=100 --gamma=0.99 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --rgb --segmentation --env_id=PushT-v1 --seed=1788 --num_envs=1024 --num-steps=16 --update_epochs=8 --num_minibatches=32 --total_timesteps=32_000_000 --num_eval_steps=100 --gamma=0.99 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --depth --env_id=PushT-v1 --seed=1788 --num_envs=1024 --num-steps=16 --update_epochs=8 --num_minibatches=32 --total_timesteps=32_000_000 --num_eval_steps=100 --gamma=0.99 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --rgb --depth --env_id=PushT-v1 --seed=1788 --num_envs=1024 --num-steps=16 --update_epochs=8 --num_minibatches=32 --total_timesteps=32_000_000 --num_eval_steps=100 --gamma=0.99 --num_eval_envs=16
+# CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --segmentation --depth --env_id=PushT-v1 --seed=1788 --num_envs=1024 --num-steps=16 --update_epochs=8 --num_minibatches=32 --total_timesteps=32_000_000 --num_eval_steps=100 --gamma=0.99 --num_eval_envs=16
+CUDA_VISIBLE_DEVICES=1 uv run src/train_ppo.py --rgb --segmentation --depth --env_id=PushT-v1 --seed=1788 --num_envs=1024 --num-steps=16 --update_epochs=8 --num_minibatches=32 --total_timesteps=32_000_000 --num_eval_steps=100 --gamma=0.99 --num_eval_envs=16
