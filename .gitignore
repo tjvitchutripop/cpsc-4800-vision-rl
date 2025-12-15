@@ -12,3 +12,4 @@ wheels/
 # Logs
 runs/
 wandb/
+models/
