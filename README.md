@@ -31,7 +31,7 @@ pip install uv
 
 ```bash
 git clone <repository-url>
-cd cpsc-4800-vision-rl
+cd cpsc-5800-vision-rl
 ```
 
 ### 3. Install Dependencies
